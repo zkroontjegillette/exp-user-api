@@ -23,7 +23,7 @@ async function getUserById(id) {
 }
 
 // get the object one way or the other
-async function getFilteredUserObject(id) {
+async function getFilteredUserObject(id = undefined) {
   var users = {};
   if(id){
     users = await getUserById(id);
